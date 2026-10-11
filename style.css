@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --color1:#08070b;
+    --color2:#f32e35;
+    --color3:#4e50de;
+    --textc1:rgb(247, 29, 14);
+    --specialcolor:rgb(205, 23, 221);
+    --pad:10px;
+    --mar:15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color1);
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: var(--color1);
+}
+nav{
+    display: flex;
+    border: 2px solid red;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul{
+    display: flex;
+    gap:clamp(15px,5vw,70px);
+    padding: 10px;
+    margin: 5px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul a{
+    text-decoration: none;
+    color: var(--color2);
+
+}
+
+#logo img{
+    margin: 7px 2px 2px 15px;
+    height:50px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+#home h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'roboto-mono',sans-serif;
+    margin:var(--mar);
+    color:var(--textc1)
+}
+
+#aboutme h2{
+    margin: var(--mar);
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+}
+
+.about-container img{
+    border-radius: 25px;
+    height:350px;
+    padding: var(--pad);
+    margin: var(--mar);
+}
+
+#socialcard{
+    border: 2px solid purple;
+    border-radius: 25px;
+    height: 330px;
+    width: 750px;
+    margin: var(--mar);
+}
+
+#socialcard p{
+    text-align: center;
+    padding: var(--pad);
+    line-height: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#socialcard p:first-child::first-letter{
+    font-size: 40px;
+    
+}
